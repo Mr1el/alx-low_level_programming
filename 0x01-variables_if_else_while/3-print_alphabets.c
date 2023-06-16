@@ -1,31 +1,21 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
  * main - Entry point
  *
- * Description: prints Alphabet with putchar function
+ * Description: Prints the alphabet
  *
  * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	char lower = 'a';
-	char UPPER = 'A';
+	char alpha[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-	/*prints a - z*/
-	while (lower <= 'z')
+	for (i = 0; i < 52; i++)
 	{
-		putchar(lower);
-		lower++;
+		putchar(alpha[i]);
 	}
-	/*prints A - Z*/
-	while (UPPER <= 'Z')
-	{
-		putchar(UPPER);
-		UPPER++;
 	putchar('\n');
 	return (0);
 }
